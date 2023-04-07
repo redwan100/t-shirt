@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <nav className="w-full flex justify-between container mx-auto px-1 bg-slate-100 py-3">
+    <nav className="w-full lg:w-[90%] flex justify-between container mx-auto px-1 bg-slate-100 py-3 mb-3">
       <p>
         <svg
           xmlns="http://www.w3.org/2000/svg"

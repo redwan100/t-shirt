@@ -1,10 +1,19 @@
 import React from "react";
 
 const Cart = ({ cart, handleDeleteCartItem }) => {
+  let message;
+  if(cart.length === 0){
+    message = <p>Please add some product</p>
+  }else{
+    message = <div> <h3>Thanks for wasting your money</h3> </div>
+  }
+
+
   return (
     <div className="p-2 lg:px-10 ">
       <h1>Order Summery: {cart.length}</h1>
-      <div className="mt-3">
+      {message}
+      <div className="mt-3 flex flex-col gap-3">
         {cart.map((tshirt) => (
           <h1 className="flex justify-between" key={tshirt._id}>
             {tshirt.name}
